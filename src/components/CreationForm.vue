@@ -33,7 +33,6 @@ let isLoading = ref(false)
 async function submitHandler() {
   isLoading.value = true
   const newEssence = await crmStore.createEssence(selectedEssence.value, crmStore.baseDomain, crmStore.accessToken)
-  console.log(newEssence);
   essenceStore.createdEssence.push(newEssence)
   isLoading.value = false
 }
