@@ -15,7 +15,6 @@ export const useCrmStore = defineStore('crmStore', () => {
         'Authorization': 'Bearer ' + accessToken.value,
         'Contenttype': 'application/json'
       },
-      name: 'Perta',
       data: {
         name: [essenceInfo.value]
       }
